@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                screens: {
+                    xl: { "max": '1200px' },
+                    lg: { "max": '992px' },
+                    md: { "max": '768px' },
+                    sm: { "max": '576px' },
+                },
+                extend: {}
+            }
+        }
+    </script>
+</head>
+
+<body class="font-serif w-full flex items-center justify-center">
+    <div class="bg-[#3571df] w-[40rem] min-h-40 h-fit mx-2 my-8">
+        <!-- search box  -->
+        <div class="w-full flex items-center justify-center">
+            <div class="w-11/12 h-10 bg-white flex items-center justify-between mt-10">
+                <input type="text" placeholder="Search..."
+                    class="bg-transparent outline-none text-sm w-full h-full px-3 search-input">
+                <i
+                    class="bx bx-search w-1/12 bg-[#3571df] text-white flex justify-center items-center p-2 mr-1 cursor-pointer sm:w-2/12"></i>
+            </div>
+        </div>
+        <!-- vocab box  -->
+        <div class="main-vocab-container">
+            <p class="text-neutral-600 hidden no-word-exists"> Sorry! This word doesn't exist in our dictionary :( </p>
+            <div class="vocab-box">
+                <!-- vocab/ audio/ phonetic/ part of speech  -->
+            </div>
+            <div class="my-4 sm:text-sm definition-box">
+                <!-- definition/ example/ synonym/ antonym  -->
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
